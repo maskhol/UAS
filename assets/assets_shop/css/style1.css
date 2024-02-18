@@ -1,0 +1,151 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+body {
+	font-family: poppins;
+	margin: 0;
+	display: grid;
+	font-size: 14px;
+}
+.jumbotron {
+	background: url('../');
+	background-size: cover;
+	height: 400px;
+	text-align: center;
+}
+.jumbotron .display-4{
+	color: white;
+	margin-top: 100px;
+}
+.jumbotron p {
+	color: black;
+	font-size: 30px;
+}
+.jumbotron hr{
+	border-color: #F05F40;
+	width: 120px;
+	border-width: 3px;
+}
+.jumbotron .btn {
+	background-color: #F05F40;
+	border: none;
+	border-radius: 23px;
+	padding-left: 23px;
+	padding-right: 23px;
+	margin-top: 20px;
+}
+section {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	text-decoration-color: white;	
+}
+section .box {
+	position: relative;
+	max-width: 900px;
+	padding: 50px;
+	box-shadow: 0 5px 15px rgba(0,0,0,.5);
+	overflow: hidden;
+	color: #000;
+}
+section .box p{
+	position: relative;
+	margin: 0 0 20px;
+	padding: 0;
+	text-transform: uppercase;
+	z-index: 2;
+}
+section .box h1 {
+	text-align: center; 
+}
+.footer {
+	display: block;
+	width: 100%;
+	padding: 6rem 3rem;
+	align-items: center;
+	text-align: center;
+	background: #444;
+	color: #fff;
+	border-top: 6px solid #F05F40;
+}
+
+/*footer*/
+.footer{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: row wrap;
+	padding: 20px;
+	color: #fff;
+	background: #262626;
+}
+.footer > * {
+	flex: 1 100%;
+}
+.l-footer {
+	margin-right: 1.25em;
+	margin-bottom: 2em;
+}
+h2 {
+	font-weight: 900;
+	font-size: 16px;
+}
+.footer ul{
+	list-style: none;
+	padding-left: 0;
+}
+.footer li {
+	line-height: 2em;
+}
+.foooter a {
+	text-decoration: none;
+}
+.r-footer {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: row-wrap;
+}
+.r-footer > *{
+	flex: 1 50%;
+	margin-right: 1.25em;
+}
+.box a {
+	text-decoration: none;
+	color: #999;
+	margin-right: 1.2em;
+}
+.h-box {
+	column-count: 2;
+	column-gap: 1.25em;
+}
+.b-footer {
+	text-align: center;
+	color: #999;
+	padding-top: 50px;
+}
+.l-footer p{
+	padding-right: 20%;
+	color: #999;
+}
+
+@media screen and (min-width: 600px) {
+	.r-footer > * {
+		flex: 1;
+	}
+	.feature {
+		flex-grow: 2; 
+	}
+	.l-footer {
+		flex: 1 0px;
+	}
+	.r-footer {
+		flex: 2 0px;
+	}
+}
